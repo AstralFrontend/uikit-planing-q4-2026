@@ -1,0 +1,10 @@
+{
+  "name": "uikit-planing-q4-2026",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=20"},
+  "scripts": {
+    "build": "node build.mjs",
+    "extract": "node scripts/extract-from-html.mjs"
+  }
+}

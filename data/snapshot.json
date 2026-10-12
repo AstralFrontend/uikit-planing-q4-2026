@@ -1,0 +1,1457 @@
+{
+ "q": "Q4_2026",
+ "base": "https://track.astral.ru/soft",
+ "loaded": "09.10.2026, 15:50:24",
+ "products": [
+  {
+   "id": "AR5",
+   "name": "Астрал Отчет 5",
+   "projects": [
+    "AR5"
+   ]
+  },
+  {
+   "id": "EDO",
+   "name": "Астрал.ЭДО",
+   "projects": [
+    "EDO"
+   ]
+  },
+  {
+   "id": "DEVOPS",
+   "name": "DevOps",
+   "projects": [
+    "DEVOPS"
+   ]
+  },
+  {
+   "id": "LKP",
+   "name": "Личный кабинет партнера",
+   "projects": [
+    "LKP"
+   ]
+  },
+  {
+   "id": "KADRY",
+   "name": "Кадровый ЭДО",
+   "projects": [
+    "KADRY"
+   ]
+  },
+  {
+   "id": "WR",
+   "name": "Веб-Регистратор",
+   "projects": [
+    "WR"
+   ]
+  }
+ ],
+ "scope": {
+  "project": "UIKIT",
+  "labelled": [
+   {
+    "key": "UIKIT-3369",
+    "summary": "DataGrid. Добавить возможность блокировать чекбокс",
+    "type": "История",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Высокий",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3378",
+    "parentName": "Массовые действия в таблице",
+    "labels": [
+     "Q4_2026",
+     "АО5",
+     "Запрос_продукта"
+    ],
+    "assignee": "Феоктистов Илья Дмитриевич",
+    "due": "2026-10-11",
+    "blocked": false,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "AR5-23196",
+      "rel": "relates to",
+      "summary": "Реализовать массовые действия ДО в реестре \"Отчеты/Черновики\" и \"Пособия и больничные\\Черновики\" на новом ui-kit",
+      "status": "Выполняется",
+      "done": false,
+      "projectName": "Астрал Отчет 5",
+      "project": "AR5"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-2172",
+    "summary": "Реализовать массовые действия в таблице",
+    "type": "История",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Высокий",
+    "sp": 8,
+    "hasSp": true,
+    "parentKey": "UIKIT-3378",
+    "parentName": "Массовые действия в таблице",
+    "labels": [
+     "Q4_2026",
+     "АО5",
+     "Доки",
+     "Запрос_продукта"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": "2026-10-11",
+    "blocked": false,
+    "linkCount": 3,
+    "links": [
+     {
+      "key": "AR5-23196",
+      "rel": "blocks",
+      "summary": "Реализовать массовые действия ДО в реестре \"Отчеты/Черновики\" и \"Пособия и больничные\\Черновики\" на новом ui-kit",
+      "status": "Выполняется",
+      "done": false,
+      "projectName": "Астрал Отчет 5",
+      "project": "AR5"
+     },
+     {
+      "key": "EDO-26317",
+      "rel": "blocks",
+      "summary": "Рефакторинг массовых действий в списках интерфейса",
+      "status": "Открыто",
+      "done": false,
+      "projectName": "Астрал.ЭДО",
+      "project": "EDO"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3400",
+    "summary": "Настроить dev sandbox в k8s",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": "2026-10-25",
+    "blocked": true,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "DEVOPS-2682",
+      "rel": "is blocked by",
+      "summary": "Сделать в k8s namespace для frontend shared dev sandbox",
+      "status": "Открытый",
+      "done": false,
+      "projectName": "DevOps",
+      "project": "DEVOPS"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3326",
+    "summary": "RadioCard. Добавить вариант горизонтального отображения",
+    "type": "История",
+    "status": "Нужны уточнения",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026",
+     "Запрос_продукта",
+     "ЭКО"
+    ],
+    "assignee": null,
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 2,
+    "links": [
+     {
+      "key": "LKP-3533",
+      "rel": "blocks",
+      "summary": "Разработать форму \"данные покупателя\" для Астрал Маркет",
+      "status": "Готово к разработке",
+      "done": false,
+      "projectName": "Личный кабинет партнера",
+      "project": "LKP"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3403",
+    "summary": "Select. Добавить чекбоксы для групп",
+    "type": "История",
+    "status": "Ревью",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026",
+     "АО5",
+     "Запрос_продукта"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 2,
+    "links": [
+     {
+      "key": "AR5-22807",
+      "rel": "blocks",
+      "summary": "[Фронт] Переход реестра \"Пособия и больничные/Запросы сведений\" на новый UI-KIT",
+      "status": "Готово к разработке",
+      "done": false,
+      "projectName": "Астрал Отчет 5",
+      "project": "AR5"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3316",
+    "summary": "Тестирование и доработка gitlab bot",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3240",
+    "parentName": "Бот уведомлений GitLab",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": "Феоктистов Илья Дмитриевич",
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "DEVOPS-2308",
+      "rel": "is blocked by",
+      "summary": "Развернуть сервис уведомлений gitlab",
+      "status": "Готово",
+      "done": true,
+      "projectName": "DevOps",
+      "project": "DEVOPS"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3407",
+    "summary": "Добавить в CI проверки по синхронизации и архивированию openspec",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 1,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3409",
+    "summary": "Написать skills на DOD",
+    "type": "Техдолг",
+    "status": "Анализ",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3388",
+    "summary": "DataGrid. Динамическая ширина колонок",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 13,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026",
+     "Доки",
+     "Запрос_продукта"
+    ],
+    "assignee": null,
+    "due": "2026-11-08",
+    "blocked": false,
+    "linkCount": 2,
+    "links": [
+     {
+      "key": "EDO-29433",
+      "rel": "blocks",
+      "summary": "DataGrid. Реализовать гибкое изменение пользователем ширины колонок таблиц",
+      "status": "Открыто",
+      "done": false,
+      "projectName": "Астрал.ЭДО",
+      "project": "EDO"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3416",
+    "summary": "Приём задачи из Jira и запуск агента",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3345",
+    "parentName": "Реализовать автономного ai агента для реализации задач shared",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-11-08",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3415",
+    "summary": "Каркас сервиса и клиенты к Jira и GitLab",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": "UIKIT-3345",
+    "parentName": "Реализовать автономного ai агента для реализации задач shared",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-11-08",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3417",
+    "summary": "CI-джоба: прогон агента, ревью, проверки и Merge Request",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3345",
+    "parentName": "Реализовать автономного ai агента для реализации задач shared",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-11-22",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3418",
+    "summary": "Перевод задачи в ревью по результатам работы",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": "UIKIT-3345",
+    "parentName": "Реализовать автономного ai агента для реализации задач shared",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-11-22",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3421",
+    "summary": "Спроектировать uikit mcp",
+    "type": "Исследование",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": "UIKIT-3382",
+    "parentName": "UI-KIT MCP",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-06",
+    "blocked": false,
+    "linkCount": 2,
+    "links": [
+     {
+      "key": "UIKIT-3398",
+      "rel": "blocks",
+      "summary": "Реализовать новый uikit mcp",
+      "internal": true,
+      "project": "UIKIT"
+     },
+     {
+      "key": "UIKIT-3399",
+      "rel": "blocks",
+      "summary": "Переработать скрипт генерации информации о компонентах и разделах storybook",
+      "internal": true,
+      "project": "UIKIT"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3313",
+    "summary": "UI. Внедрить npm audit и убрать уязвимости",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": "UIKIT-3234",
+    "parentName": "Устранение уязвимостей",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-06",
+    "blocked": false,
+    "linkCount": 1,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3405",
+    "summary": "Обновить TS в UI-пакете",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-06",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3398",
+    "summary": "Реализовать новый uikit mcp",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3382",
+    "parentName": "UI-KIT MCP",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-06",
+    "blocked": true,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "UIKIT-3421",
+      "rel": "is blocked by",
+      "summary": "Спроектировать uikit mcp",
+      "internal": true,
+      "project": "UIKIT"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3419",
+    "summary": "Исправление замечаний Merge Request",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3345",
+    "parentName": "Реализовать автономного ai агента для реализации задач shared",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-06",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3392",
+    "summary": "Перейти на npm stage publishing",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-20",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3423",
+    "summary": "Сделать презентацию для Техноретро Q4 2026",
+    "type": "Исследование",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": "Феоктистов Илья Дмитриевич",
+    "due": "2026-12-20",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3314",
+    "summary": "Внедрить в shared пакеты pnpm, npm audit",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": "UIKIT-3234",
+    "parentName": "Устранение уязвимостей",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-20",
+    "blocked": false,
+    "linkCount": 1,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3399",
+    "summary": "Переработать скрипт генерации информации о компонентах и разделах storybook",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3382",
+    "parentName": "UI-KIT MCP",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-20",
+    "blocked": true,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "UIKIT-3421",
+      "rel": "is blocked by",
+      "summary": "Спроектировать uikit mcp",
+      "internal": true,
+      "project": "UIKIT"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3422",
+    "summary": "Сделать и протестировать uikit mcp и skills на project-starter",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 5,
+    "hasSp": true,
+    "parentKey": "UIKIT-3382",
+    "parentName": "UI-KIT MCP",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-20",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3424",
+    "summary": "Fileuploader. Составить proposal на изменение архитектуры",
+    "type": "Исследование",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": "2026-12-25",
+    "blocked": false,
+    "linkCount": 1,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3007",
+    "summary": "[mobx-router]: Добавить механизм получения текущего активного роута",
+    "type": "История",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": "UIKIT-1920",
+    "parentName": "Mobx-router",
+    "labels": [
+     "Q4_2026",
+     "Запрос_продукта",
+     "КЭДО"
+    ],
+    "assignee": null,
+    "due": "2026-12-25",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3394",
+    "summary": "Перенести все что связано с ui-kit в ui репу",
+    "type": "Техдолг",
+    "status": "Готово",
+    "rejected": true,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3382",
+    "parentName": "UI-KIT MCP",
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3373",
+    "summary": "Skills. Написать скилл на реализацию скриншотных тестов",
+    "type": "Техдолг",
+    "status": "Готово",
+    "rejected": true,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   }
+  ],
+  "reserve": [
+   {
+    "key": "UIKIT-3309",
+    "summary": "Tabs. Не соответствие размеров компонента",
+    "type": "История",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Низший",
+    "sp": 1,
+    "hasSp": true,
+    "parentKey": "UIKIT-2276",
+    "parentName": "Редизайн UI-KIT",
+    "labels": [
+     "Q4_2026_Резерв",
+     "Запрос_дизайнеров"
+    ],
+    "assignee": null,
+    "due": "2026-10-11",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3396",
+    "summary": "EditableText. Изменить позицию кнопки Сохранить",
+    "type": "История",
+    "status": "Новость",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": "UIKIT-2647",
+    "parentName": "Улучшения UI/UX",
+    "labels": [
+     "Q4_2026_Резерв",
+     "Запрос_продукта",
+     "КЭДО"
+    ],
+    "assignee": null,
+    "due": "2026-10-11",
+    "blocked": false,
+    "linkCount": 2,
+    "links": [
+     {
+      "key": "KADRY-8295",
+      "rel": "blocks",
+      "summary": "КЭДО. При редактировании группы сотрудников выпадающий список руководителей перекрывает кнопки сохранения",
+      "status": "Открыто",
+      "done": false,
+      "projectName": "Кадровый ЭДО",
+      "project": "KADRY"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3338",
+    "summary": "Добавить компонент отображения статуса",
+    "type": "История",
+    "status": "Выполняется",
+    "rejected": false,
+    "done": false,
+    "priority": "Низший",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026_Резерв",
+     "Запрос_продукта",
+     "ЭКО"
+    ],
+    "assignee": null,
+    "due": "2026-10-11",
+    "blocked": false,
+    "linkCount": 2,
+    "links": [
+     {
+      "key": "LKP-3537",
+      "rel": "relates to",
+      "summary": "Фронт. Реализовать раздел \"Заказы\" в ЕЛК",
+      "status": "Готово",
+      "done": true,
+      "projectName": "Личный кабинет партнера",
+      "project": "LKP"
+     },
+     {
+      "key": "LKP-3669",
+      "rel": "relates to",
+      "summary": "Реализовать раздел \"Заказы\" в ЕЛК",
+      "status": "Готово к разработке",
+      "done": false,
+      "projectName": "Личный кабинет партнера",
+      "project": "LKP"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3027",
+    "summary": "Улучшить триггер запуска визуальных тестов",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3034",
+    "summary": "modalDialog. Гибкая высота модальных окон ",
+    "type": "История",
+    "status": "Анализ",
+    "rejected": false,
+    "done": false,
+    "priority": "Низший",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Q4_2026_Резерв",
+     "Запрос_дизайнеров"
+    ],
+    "assignee": null,
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3181",
+    "summary": "Grid. Добавить props justifyContent и alignItems",
+    "type": "История",
+    "status": "Новость",
+    "rejected": false,
+    "done": false,
+    "priority": "Низший",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3214",
+    "parentName": "Улучшение DX",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": "2026-10-25",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3429",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3322",
+    "parentName": "Добавить поддержку react router 8 в mobx-router",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3430",
+    "summary": "Создать Proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3302",
+    "parentName": "Реализовать overlay-лоадер с блокировкой интерфейса",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3428",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3377",
+    "parentName": "FileUploader. Добавить возможность отображения чекбокса рядом с label",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3431",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-2591",
+    "parentName": "Autocomplete. Добавить infinite mode с поддержкой дозагрузки",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-2682",
+    "summary": "Обновить remeda во всех shared репозиториях",
+    "type": "Техдолг",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": "UIKIT-2270",
+    "parentName": "Обновление стэка",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3435",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-2986",
+    "parentName": "Реализовать компонент с зоной загрузки файла на всю страницу",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3432",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3364",
+    "parentName": "Добавить сценарий для AsyncAutocomplete",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3433",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3221",
+    "parentName": "NewPopover. Использовать компонент в других компонентах",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3434",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3026",
+    "parentName": "Обновить react-pdf до последней версии",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3426",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3411",
+    "parentName": "[PdfViewer] Перенести скролбар правее кнопок зума",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3447",
+    "summary": "Обновить proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3338",
+    "parentName": "Добавить компонент отображения статуса",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3342",
+    "summary": "DataGrid. Добавить возможность сортировки по кастомному имени",
+    "type": "История",
+    "status": "Сделать",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": "UIKIT-3381",
+    "parentName": "Поддержка отказа от кастома в КЭДО",
+    "labels": [
+     "Q4_2026_Резерв",
+     "Запрос_продукта",
+     "КЭДО"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "KADRY-8658",
+      "rel": "blocks",
+      "summary": "Переезд на таблицу из кита",
+      "status": "Открыто",
+      "done": false,
+      "projectName": "Кадровый ЭДО",
+      "project": "KADRY"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3427",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3342",
+    "parentName": "DataGrid. Добавить возможность сортировки по кастомному имени",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3436",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низший",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-2189",
+    "parentName": "DataGrid. Реализовать адаптив для массовых действий в таблице",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": null,
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3437",
+    "summary": "Сделать proposal",
+    "type": "Аналитика (подзадача)",
+    "status": "Готово к разработке",
+    "rejected": false,
+    "done": false,
+    "priority": "Низший",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3294",
+    "parentName": "Реализовать Бота для взаимодействия с командой shared",
+    "labels": [
+     "Q4_2026_Резерв"
+    ],
+    "assignee": "Феоктистов Илья Дмитриевич",
+    "due": null,
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   }
+  ],
+  "unlabelled": [
+   {
+    "key": "UIKIT-3454",
+    "summary": "DataGrid. Дополнить макеты для динамических колонок",
+    "type": "Дизайн (подзадача)",
+    "status": "Открыто",
+    "rejected": false,
+    "done": false,
+    "priority": "Высокий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3388",
+    "parentName": "DataGrid. Динамическая ширина колонок",
+    "labels": [],
+    "assignee": "Садомова Ярослава Александровна",
+    "due": "2026-10-19",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3379",
+    "summary": "Обработать ChunkLoadError для Firefox и Safari",
+    "type": "История",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Запрос_продукта",
+     "Подпись"
+    ],
+    "assignee": null,
+    "due": "2026-10-11",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3351",
+    "summary": "DonutChart. Сделать возможность управлять цветом фона трэка",
+    "type": "История",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Низкий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "Внеплан",
+     "Доки",
+     "Запрос_продукта"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": "2026-09-28",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3293",
+    "summary": "Link. Нужно добавить поддержку пропса component и to.",
+    "type": "История",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Низший",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [
+     "ВР",
+     "Внеплан",
+     "Запрос_продукта"
+    ],
+    "assignee": "Королев Данил Игоревич",
+    "due": "2026-09-28",
+    "blocked": false,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "WR-25547",
+      "rel": "blocks",
+      "summary": "Заменить style обёртку RouterLink на Link",
+      "status": "Открыто",
+      "done": false,
+      "projectName": "Веб-Регистратор",
+      "project": "WR"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3274",
+    "summary": "Реализовать моковый сервис для анбординга",
+    "type": "История",
+    "status": "Бэклог",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3258",
+    "parentName": "Onboarding",
+    "labels": [],
+    "assignee": null,
+    "due": "2026-09-28",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3267",
+    "summary": "Добавить метрики",
+    "type": "История",
+    "status": "Анализ",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 3,
+    "hasSp": true,
+    "parentKey": "UIKIT-3240",
+    "parentName": "Бот уведомлений GitLab",
+    "labels": [],
+    "assignee": null,
+    "due": "2026-12-25",
+    "blocked": false,
+    "linkCount": 1,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3176",
+    "summary": "Мигрировать на lefthook в ui репе",
+    "type": "Техдолг",
+    "status": "Готово",
+    "rejected": false,
+    "done": true,
+    "priority": "Низкий",
+    "sp": 2,
+    "hasSp": true,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [],
+    "assignee": "Королев Данил Игоревич",
+    "due": "2026-09-28",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-2790",
+    "summary": "Происследовать почему вариативный шрифт отличается по ширине от макетов",
+    "type": "Исследование",
+    "status": "Бэклог",
+    "rejected": false,
+    "done": false,
+    "priority": "Низкий",
+    "sp": 1,
+    "hasSp": true,
+    "parentKey": "UIKIT-2276",
+    "parentName": "Редизайн UI-KIT",
+    "labels": [],
+    "assignee": null,
+    "due": "2026-09-28",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   },
+   {
+    "key": "UIKIT-3425",
+    "summary": "Поддержка интеграции onboarding в АО5",
+    "type": "История",
+    "status": "Готово",
+    "rejected": true,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": null,
+    "parentName": null,
+    "labels": [],
+    "assignee": null,
+    "due": "2026-12-06",
+    "blocked": false,
+    "linkCount": 1,
+    "links": [
+     {
+      "key": "AR5-23662",
+      "rel": "relates to",
+      "summary": "Онбординг. Приветствие и добавление организации",
+      "status": "Готово к разработке",
+      "done": false,
+      "projectName": "Астрал Отчет 5",
+      "project": "AR5"
+     }
+    ]
+   },
+   {
+    "key": "UIKIT-3401",
+    "summary": "Сделать skills для работы с uikit и uikit mcp",
+    "type": "История",
+    "status": "Готово",
+    "rejected": true,
+    "done": false,
+    "priority": "Средний",
+    "sp": 0,
+    "hasSp": false,
+    "parentKey": "UIKIT-3382",
+    "parentName": "UI-KIT MCP",
+    "labels": [],
+    "assignee": null,
+    "due": "2026-11-22",
+    "blocked": false,
+    "linkCount": 0,
+    "links": []
+   }
+  ]
+ }
+}
