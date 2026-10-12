@@ -1,11 +1,10 @@
-// Перенос задач в браузере. Изменения сроков хранятся в localStorage поверх data/overrides.json
-// и выгружаются тем же форматом, чтобы положить файл в репозиторий.
+// Перенос задач в браузере. Изменения сроков хранятся в localStorage поверх data/snapshot.json,
+// а выгружается полный снимок с ними, чтобы заменить файл в репозитории.
 const $ = s => document.querySelector(s);
 const data = JSON.parse($('#data').textContent);
 const {snapshot, cap} = data, q = snapshot.q, storageKey = `uikit-plan-overrides-${q}`;
 const now = new Date(), today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-const baseSnapshot = applyOverrides(snapshot, data.overrides);
-const baseItems = new Map(Object.values(baseSnapshot.scope).filter(Array.isArray).flat().map(x => [x.key, x]));
+const baseItems = new Map(Object.values(snapshot.scope).filter(Array.isArray).flat().map(x => [x.key, x]));
 const iterations = cap.iterations;
 const inIteration = (due, it) => due != null && it.start <= due && due <= it.end;
 const ruDate = d => d ? d.split('-').reverse().join('.') : 'без срока';
@@ -20,12 +19,12 @@ function save() {
   catch { message('Не удалось сохранить в localStorage: изменения пропадут после перезагрузки.'); }
 }
 function message(text) { $('#message').hidden = false; $('#message').textContent = text; clearTimeout(message.timer); message.timer = setTimeout(() => { $('#message').hidden = true; }, 5000); }
-const merged = () => Object.fromEntries(Object.entries({...data.overrides, ...local}).sort(([a], [b]) => a.localeCompare(b, 'en', {numeric: true})));
-const exportText = () => '{\n' + Object.entries(merged()).map(([k, v]) => ` ${JSON.stringify(k)}: {"due": ${JSON.stringify(v.due)}}`).join(',\n') + '\n}\n';
+// Тот же формат, что пишет scripts/extract-from-html.mjs.
+const exportText = () => JSON.stringify(applyOverrides(snapshot, local), null, 1) + '\n';
 
 function render() {
   for (const group of document.querySelectorAll('#tablePlan [data-group]')) openGroups.set(group.dataset.group, group.open);
-  const parts = renderParts(applyOverrides(snapshot, {...data.overrides, ...local}), cap, {today, changed: new Set(Object.keys(local)), openGroups});
+  const parts = renderParts(applyOverrides(snapshot, local), cap, {today, changed: new Set(Object.keys(local)), openGroups});
   $('#totals').innerHTML = parts.totals;
   $('#overview').innerHTML = parts.overview;
   $('#tablePlan').innerHTML = parts.table;
@@ -60,12 +59,12 @@ $('#moveCancel').onclick = () => $('#moveDialog').close();
 $('#moveForm').onsubmit = () => { const key = dialogKey, target = $('#moveTarget').value; setTimeout(() => move(key, target)); };
 
 $('#export').onclick = () => {
-  const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(new Blob([exportText()], {type: 'application/json'})), download: 'overrides.json'});
+  const a = Object.assign(document.createElement('a'), {href: URL.createObjectURL(new Blob([exportText()], {type: 'application/json'})), download: 'snapshot.json'});
   a.click(); URL.revokeObjectURL(a.href);
 };
 $('#copy').onclick = async () => {
-  try { await navigator.clipboard.writeText(exportText()); message('JSON скопирован. Вставьте его в data/overrides.json.'); }
-  catch { message('Не удалось скопировать: используйте «Скачать overrides.json».'); }
+  try { await navigator.clipboard.writeText(exportText()); message('JSON скопирован. Вставьте его в data/snapshot.json.'); }
+  catch { message('Не удалось скопировать: используйте «Скачать snapshot.json».'); }
 };
 $('#reset').onclick = () => { if (confirm('Сбросить все локальные переносы?')) { local = {}; save(); render(); } };
 

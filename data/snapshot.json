@@ -141,7 +141,7 @@
      "Q4_2026"
     ],
     "assignee": "Королев Данил Игоревич",
-    "due": "2026-10-25",
+    "due": null,
     "blocked": true,
     "linkCount": 1,
     "links": [
@@ -238,7 +238,7 @@
      "Q4_2026"
     ],
     "assignee": "Феоктистов Илья Дмитриевич",
-    "due": "2026-10-25",
+    "due": null,
     "blocked": false,
     "linkCount": 1,
     "links": [
@@ -313,7 +313,7 @@
      "Запрос_продукта"
     ],
     "assignee": null,
-    "due": "2026-11-08",
+    "due": "2026-10-25",
     "blocked": false,
     "linkCount": 2,
     "links": [

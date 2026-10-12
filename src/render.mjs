@@ -14,7 +14,7 @@ const rel = l => rels[l.rel] || l.rel;
 const blocked = x => !x.done && x.blocked;
 const iterationAnchor = it => 'iteration-' + it.id.replace(/\D/g, '');
 
-// Правки поверх снимка: {KEY: {due}}; null убирает срок.
+// Локальные переносы поверх снимка: {KEY: {due}}; null убирает срок.
 export function applyOverrides(snapshot, overrides) {
   const scope = {project: snapshot.scope.project};
   for (const name of ['labelled', 'reserve', 'unlabelled']) scope[name] = snapshot.scope[name].map(x => ({...x, ...overrides[x.key]}));
@@ -86,9 +86,9 @@ export function renderParts(snapshot, cap, {today, changed = new Set(), openGrou
 export const NO_DUE = 'nodue';
 
 // Страница при сборке: первый рендер в HTML плюс данные и клиентский скрипт для переноса.
-export function renderPage(snapshot, cap, overrides, {today, css, clientScript}) {
+export function renderPage(snapshot, cap, {today, css, clientScript}) {
   const {q} = snapshot;
-  const parts = renderParts(applyOverrides(snapshot, overrides), cap, {today});
+  const parts = renderParts(snapshot, cap, {today});
   const json = v => JSON.stringify(v).replace(/</g, '\\u003c');
   return `<!doctype html>
 <html lang="ru" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>UIKIT · Планирование ${esc(q.replace('_', ' '))}</title>
@@ -96,13 +96,13 @@ export function renderPage(snapshot, cap, overrides, {today, css, clientScript})
 <style>${css}</style></head><body>
 <header><div class="brand"><span class="logo">▦</span> UI Kit <span class="muted">/ Планирование</span></div><nav aria-label="Квартал"><strong id="quarter">${esc(q.replace('_', ' '))}</strong></nav><div class="connection"><span>Локальное планирование</span><small>Данные Jira на ${esc(snapshot.loaded || '—')}</small></div><button id="themeToggle" type="button" aria-label="Включить тёмную тему" aria-pressed="false">☾ <span>Тёмная тема</span></button></header>
 <main><section class="intro"><div><div class="eyebrow">ПЛАН ПО СРОКАМ ЗАДАЧ</div><h1>План квартала</h1><p id="subtitle">${esc(cap?.title || 'Двухнедельная сетка · ёмкость неизвестна')}</p></div><div id="totals" class="totals">${parts.totals}</div></section>
-<div class="toolbar"><span>Переносы сохраняются только в этом браузере.</span><button id="export" type="button">⤓ Скачать overrides.json</button><button id="copy" type="button">Копировать JSON</button><button id="reset" type="button">Сбросить локальные изменения</button></div>
+<div class="toolbar"><span>Переносы сохраняются только в этом браузере.</span><button id="export" type="button">⤓ Скачать snapshot.json</button><button id="copy" type="button">Копировать JSON</button><button id="reset" type="button">Сбросить локальные изменения</button></div>
 <div id="message" role="status" hidden></div><details id="warnings"><summary>Предупреждения · ${parts.warnings.length}</summary><ul>${parts.warnings.map(w => `<li>${esc(w)}</li>`).join('')}</ul></details>
 <section id="overview" aria-label="Загрузка итераций">${parts.overview}</section><div class="workspace"><section id="tablePlan" aria-label="План в таблице">${parts.table}</section></div>
 <details id="journal" open><summary>Локальные изменения <span id="journalCount">0</span></summary><div id="entries"><p class="muted">Перетащите задачу за ⠿ в итерацию, плитку загрузки или «Без срока».</p></div></details>
 </main>
 <dialog id="moveDialog"><form id="moveForm" method="dialog"><h2>Перенести задачу</h2><p id="moveKey"></p><label>Итерация<select id="moveTarget"></select></label><div class="actions"><button type="button" id="moveCancel">Отмена</button><button class="primary" value="ok">Перенести</button></div></form></dialog>
-<script type="application/json" id="data">${json({snapshot, cap, overrides})}</script>
+<script type="application/json" id="data">${json({snapshot, cap})}</script>
 <script>${clientScript}</script>
 </body></html>
 `;
